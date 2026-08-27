@@ -21,7 +21,7 @@ class TaskManager:
         self.tasks = []
         self.next_id = 1
 
-    def add_task(self, description, due_date=None):
+    def add_task(self, description, due_date=None, priority="low"):
         task = Task(self.next_id, description, due_date)
         self.tasks.append(task)
         self.next_id += 1
